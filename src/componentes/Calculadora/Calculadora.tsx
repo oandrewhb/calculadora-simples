@@ -9,9 +9,9 @@ function Calculadora() {
     const [contador, setContador] = useState(0);
 
     function atualizarContador(comando: string) {
-        if (comando == "mais") {
+        if (comando === "mais") {
             setContador(contador+1);
-        } else if (comando == "menos") {
+        } else if (comando === "menos") {
             setContador(contador-1);
         }
     }
