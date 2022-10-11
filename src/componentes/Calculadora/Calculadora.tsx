@@ -18,6 +18,7 @@ function Calculadora() {
 
     return (
         <div className='calculadora'>
+            <h1>Essa calculadora é muito legal!</h1>
             <Tela contador={contador} />
             <Teclado atualizarContador={atualizarContador} />
         </div>
