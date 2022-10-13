@@ -1,0 +1,7 @@
+{
+    "rules": {
+        "eqeqeq": "off",
+        "array-callback-return": "off",
+        "@typescript-eslint/no-unused-vars": "off"
+    }
+}
