@@ -2,13 +2,19 @@ import React from 'react';
 import './Tela.css';
 
 interface props {
-    contador: number,
+    expressao: string,
+    resultado: string,
 }
 
-function Tela({contador}: props) {
+function Tela({expressao, resultado}: props) {
     return (
         <div className='tela'>
-            <p>Contador: {contador}</p>
+            <div className="expressao">
+                <p>Expressão: {expressao}</p>
+            </div>
+            <div className="resultado">
+                <p>Resultado: {resultado}</p>
+            </div>
         </div>
     );
 }
