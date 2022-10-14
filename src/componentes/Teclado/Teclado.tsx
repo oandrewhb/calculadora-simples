@@ -1,3 +1,4 @@
+import React from 'react';
 import './Teclado.css';
 
 import { EnumComando } from "../../enums/EnumComando";
