@@ -4,6 +4,7 @@ import './Calculadora.css';
 import {
     EnumNumero,
     EnumOperacao,
+    EnumComando,
 } from '../../enums';
 
 import { valorExisteEmEnum, trocarValorEmIndice, deletarUltimoCaractere } from '../../classes/Util';
@@ -11,7 +12,6 @@ import { CerebroCalculadora } from '../../classes/CerebroCalculadora';
 
 import Tela from '../Tela/Tela';
 import Teclado from '../Teclado/Teclado';
-import { EnumComando } from '../../enums/EnumComando';
 
 function Calculadora() {
 
