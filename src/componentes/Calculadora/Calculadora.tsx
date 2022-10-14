@@ -19,23 +19,23 @@ function Calculadora() {
     useEffect(() => {
         const cerebroCalculadora = new CerebroCalculadora(expressao);
         setResultado(cerebroCalculadora.getResultado());
-    });
+    }, [expressao]);
 
     const lidaComComando = {
         numero: (numero: string) => {
             setExpressao(expressao + numero)
         },
         operacao: (operacao: string) => {
-            if (expressao == "" && operacao == EnumOperacao.SUBTRACAO) {
+            if (expressao === "" && operacao === EnumOperacao.SUBTRACAO) {
                 setExpressao(expressao + operacao);
-            } else if (expressao != "") {
+            } else if (expressao !== "") {
 
                 const ultimoCaractereExpressao = expressao[expressao.length-1];
                 if (valorExisteEmEnum(ultimoCaractereExpressao, EnumOperacao)) {
 
-                    if ((operacao == EnumOperacao.ADICAO || operacao == EnumOperacao.SUBTRACAO) && (ultimoCaractereExpressao == EnumOperacao.ADICAO || ultimoCaractereExpressao == EnumOperacao.SUBTRACAO)) {
+                    if ((operacao === EnumOperacao.ADICAO || operacao === EnumOperacao.SUBTRACAO) && (ultimoCaractereExpressao === EnumOperacao.ADICAO || ultimoCaractereExpressao === EnumOperacao.SUBTRACAO)) {
                         setExpressao(trocarValorEmIndice(expressao, operacao, -1));
-                    } else if (ultimoCaractereExpressao != EnumOperacao.ADICAO && ultimoCaractereExpressao != EnumOperacao.SUBTRACAO && operacao == EnumOperacao.SUBTRACAO) { 
+                    } else if (ultimoCaractereExpressao !== EnumOperacao.ADICAO && ultimoCaractereExpressao !== EnumOperacao.SUBTRACAO && operacao === EnumOperacao.SUBTRACAO) { 
                         setExpressao(expressao + operacao);
                     } else {
                         const penultimoCaractereExpressao = expressao[expressao.length-2];
@@ -53,17 +53,17 @@ function Calculadora() {
             }
         },
         comando: (comando: string) => {
-            if (comando == EnumComando.LIMPAR) {
+            if (comando === EnumComando.LIMPAR) {
                 setExpressao("");
                 return;
             }
 
-            if (comando == EnumComando.APAGAR) {
+            if (comando === EnumComando.APAGAR) {
                 setExpressao(deletarUltimoCaractere(expressao));
                 return;
             }
 
-            if (comando == EnumComando.CALCULAR) {
+            if (comando === EnumComando.CALCULAR) {
                 setExpressao(resultado);
             }
         },

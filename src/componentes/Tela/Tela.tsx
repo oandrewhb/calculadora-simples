@@ -1,7 +1,7 @@
 import './Tela.css';
 
 const expressaoAltoNivel = (expressao: string) => {
-    if (expressao == "") {
+    if (expressao === "") {
         return "_";
     } else {
         return expressao;
@@ -9,7 +9,7 @@ const expressaoAltoNivel = (expressao: string) => {
 }
 
 const resultadoAltoNivel = (resultado: string) => {
-    if (resultado == "") {
+    if (resultado === "") {
         return "_";
     } else {
         return resultado;

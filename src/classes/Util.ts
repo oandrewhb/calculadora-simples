@@ -1,9 +1,10 @@
 export function valorExisteEmEnum(valor: string, enumParam: object):boolean {
     let existe = false;
     Object.values(enumParam).map((e, indice) => {
-        if (valor == e) {
+        if (valor === e) {
             existe = true;
         }
+        return true;
     });
     return existe;
 }
@@ -27,7 +28,7 @@ export function trocarValorEmIndice(stringPrincipal: string, valor: string, indi
 }
 
 export function deletarUltimoCaractere(stringPrincipal: string): string {
-    if (stringPrincipal == "") {
+    if (stringPrincipal === "") {
         return "";
     } else {
         return trocarValorEmIndice(stringPrincipal, "", -1);
