@@ -17,6 +17,7 @@ function Calculadora() {
         Object.values(EnumNumero).map((validaEnumNumero) => {
             if (comando == validaEnumNumero) {
                 setExpressao(expressao + comando)
+                return
             }
         })
 
@@ -28,18 +29,20 @@ function Calculadora() {
                     let novaExpressao = expressao.slice(0, expressao.length-1);
                     novaExpressao += comando;
                     setExpressao(novaExpressao)
+                    return
                 } else {
 
                     let ultimoElementoExpressaoIsOperacao: boolean = false;
-                Object.values(EnumOperacao).map(elemento => {
-                    if (ultimoElementoExpressao == elemento) {
-                        ultimoElementoExpressaoIsOperacao = true;
-                    }
-                })
+                    Object.values(EnumOperacao).map(elemento => {
+                        if (ultimoElementoExpressao == elemento) {
+                            ultimoElementoExpressaoIsOperacao = true;
+                        }
+                    })
 
-                if (!ultimoElementoExpressaoIsOperacao) {
-                    setExpressao(expressao + comando);
-                }
+                    if (!ultimoElementoExpressaoIsOperacao) {
+                        setExpressao(expressao + comando);
+                        return
+                    }
 
                 }
 

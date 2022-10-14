@@ -21,7 +21,7 @@ function Teclado({comandoDoTeclado}: propsTeclado) {
         <div className='teclado'>
             <Botao conteudo={"AC"} disabled={true} />
             <Botao conteudo={"()"} disabled={true} />
-            <Botao conteudo={"%"} disabled={true} />
+            <Botao conteudo={EnumOperacao.PORCENTAGEM} disabled={true} />
             <Botao conteudo={EnumOperacao.DIVISAO} />
             <br/>
             <Botao conteudo={EnumNumero.SETE} />
