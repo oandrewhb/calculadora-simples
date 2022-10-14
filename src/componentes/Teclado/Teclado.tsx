@@ -1,8 +1,9 @@
 import React from 'react';
 import './Teclado.css';
 
-import { EnumNumero } from '../../Enums/EnumNumero';
-import { EnumOperacao } from '../../Enums/EnumOperacao';
+import { EnumNumero } from '../../enums/EnumNumero';
+import { EnumOperacao } from '../../enums/EnumOperacao';
+import { EnumComando } from '../../enums/EnumComando';
 
 interface propsTeclado {
     comandoDoTeclado: Function,
@@ -19,9 +20,9 @@ function Teclado({comandoDoTeclado}: propsTeclado) {
 
     return (
         <div className='teclado'>
-            <Botao conteudo={"AC"} disabled={true} />
+            <Botao conteudo={EnumComando.LIMPAR} />
             <Botao conteudo={"()"} disabled={true} />
-            <Botao conteudo={"%"} disabled={true} />
+            <Botao conteudo={EnumOperacao.PORCENTAGEM} disabled={true} />
             <Botao conteudo={EnumOperacao.DIVISAO} />
             <br/>
             <Botao conteudo={EnumNumero.SETE} />
@@ -40,9 +41,9 @@ function Teclado({comandoDoTeclado}: propsTeclado) {
             <Botao conteudo={EnumOperacao.ADICAO} />
             <br/>
             <Botao conteudo={EnumNumero.ZERO} />
-            <Botao conteudo={","} />
-            <Botao conteudo={"del"} disabled={true} />
-            <Botao conteudo={"="} disabled={true} />
+            <Botao conteudo={","} disabled={true} />
+            <Botao conteudo={EnumComando.APAGAR} />
+            <Botao conteudo={EnumComando.CALCULAR} />
         </div>
     );
 }

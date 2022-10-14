@@ -5,4 +5,5 @@ export enum EnumOperacao {
     DIVISAO = "/",
     POTENCIASAO = "p",
     RADICIACAO = "r",
+    PORCENTAGEM = "%",
 }

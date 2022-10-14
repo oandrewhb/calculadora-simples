@@ -1,4 +1,16 @@
 .tela {
     background-color: #e0e0e0;
     margin-bottom: 20px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.expressao, .resultado {
+    margin: 0px;
+    line-height: 0px;
+}
+
+.expressao textarea, .resultado textarea {
+    padding: 10px;
+    font-size: 20px;
 }
