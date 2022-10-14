@@ -1,53 +1,87 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Calculadora.css';
 
-import { EnumNumero } from '../../Enums/EnumNumero';
-import { EnumOperacao } from '../../Enums/EnumOperacao';
+import { EnumNumero } from '../../enums/EnumNumero';
+import { EnumOperacao } from '../../enums/EnumOperacao';
+
+import { valorExisteEmEnum, trocarValorEmIndice, deletarUltimoCaractere } from '../../classes/Util';
+import { CerebroCalculadora } from '../../classes/CerebroCalculadora';
 
 import Tela from '../Tela/Tela';
 import Teclado from '../Teclado/Teclado';
+import { EnumComando } from '../../enums/EnumComando';
 
 function Calculadora() {
 
     const [expressao, setExpressao] = useState("");
     const [resultado, setResultado] = useState("");
 
-    function comandoDoTeclado(comando: string) {
+    useEffect(() => {
+        const cerebroCalculadora = new CerebroCalculadora(expressao);
+        setResultado(cerebroCalculadora.getResultado());
+    });
 
-        Object.values(EnumNumero).map((validaEnumNumero) => {
-            if (comando == validaEnumNumero) {
-                setExpressao(expressao + comando)
-                return
-            }
-        })
+    const lidaComComando = {
+        numero: (numero: string) => {
+            setExpressao(expressao + numero)
+        },
+        operacao: (operacao: string) => {
+            if (expressao == "" && operacao == EnumOperacao.SUBTRACAO) {
+                setExpressao(expressao + operacao);
+            } else if (expressao != "") {
 
-        Object.values(EnumOperacao).map(validaEnumOperacao => {
-            if (comando == validaEnumOperacao) {
-                let ultimoElementoExpressao: string = expressao[expressao.length-1];
+                const ultimoCaractereExpressao = expressao[expressao.length-1];
+                if (valorExisteEmEnum(ultimoCaractereExpressao, EnumOperacao)) {
 
-                if ((ultimoElementoExpressao == EnumOperacao.ADICAO || ultimoElementoExpressao == EnumOperacao.SUBTRACAO) && (comando == EnumOperacao.ADICAO || comando == EnumOperacao.SUBTRACAO)) {
-                    let novaExpressao = expressao.slice(0, expressao.length-1);
-                    novaExpressao += comando;
-                    setExpressao(novaExpressao)
-                    return
-                } else {
-
-                    let ultimoElementoExpressaoIsOperacao: boolean = false;
-                    Object.values(EnumOperacao).map(elemento => {
-                        if (ultimoElementoExpressao == elemento) {
-                            ultimoElementoExpressaoIsOperacao = true;
+                    if ((operacao == EnumOperacao.ADICAO || operacao == EnumOperacao.SUBTRACAO) && (ultimoCaractereExpressao == EnumOperacao.ADICAO || ultimoCaractereExpressao == EnumOperacao.SUBTRACAO)) {
+                        setExpressao(trocarValorEmIndice(expressao, operacao, -1));
+                    } else if (ultimoCaractereExpressao != EnumOperacao.ADICAO && ultimoCaractereExpressao != EnumOperacao.SUBTRACAO && operacao == EnumOperacao.SUBTRACAO) { 
+                        setExpressao(expressao + operacao);
+                    } else {
+                        const penultimoCaractereExpressao = expressao[expressao.length-2];
+                        if (valorExisteEmEnum(penultimoCaractereExpressao, EnumOperacao)) {
+                            setExpressao(deletarUltimoCaractere(expressao))
+                        } else {
+                            setExpressao(trocarValorEmIndice(expressao, operacao, -1));
                         }
-                    })
-
-                    if (!ultimoElementoExpressaoIsOperacao) {
-                        setExpressao(expressao + comando);
-                        return
                     }
 
+                } else {
+                    setExpressao(expressao + operacao)
                 }
 
             }
-        })
+        },
+        comando: (comando: string) => {
+            if (comando == EnumComando.LIMPAR) {
+                setExpressao("");
+                return;
+            }
+
+            if (comando == EnumComando.APAGAR) {
+                setExpressao(deletarUltimoCaractere(expressao));
+                return;
+            }
+
+            if (comando == EnumComando.CALCULAR) {
+                setExpressao(resultado);
+            }
+        },
+    }
+
+    function comandoDoTeclado(comando: string) {
+
+        if (valorExisteEmEnum(comando, EnumNumero)) {
+            lidaComComando.numero(comando);
+        }
+
+        if (valorExisteEmEnum(comando, EnumOperacao)) {
+            lidaComComando.operacao(comando);
+        }
+
+        if (valorExisteEmEnum(comando, EnumComando)) {
+            lidaComComando.comando(comando);
+        }
 
     }
     
