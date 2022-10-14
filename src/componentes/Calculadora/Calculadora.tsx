@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import './Calculadora.css';
 
-import { EnumNumero } from '../../enums/EnumNumero';
-import { EnumOperacao } from '../../enums/EnumOperacao';
-import { EnumComando } from '../../enums/EnumComando';
+import { EnumComando } from "../../enums/EnumComando";
+import { EnumOperacao } from "../../enums/EnumOperacao";
+import { EnumNumero } from "../../enums/EnumNumero";
 
 import { valorExisteEmEnum, trocarValorEmIndice, deletarUltimoCaractere } from '../../classes/Util';
 import { CerebroCalculadora } from '../../classes/CerebroCalculadora';
