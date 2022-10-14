@@ -1,4 +1,4 @@
-export enum EnumOperacao {
+enum EnumOperacao {
     ADICAO = "+",
     SUBTRACAO = "-",
     MULTIPLICACAO = "x",
@@ -7,3 +7,5 @@ export enum EnumOperacao {
     RADICIACAO = "r",
     PORCENTAGEM = "%",
 }
+
+export default EnumOperacao;

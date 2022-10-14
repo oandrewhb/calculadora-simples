@@ -1,4 +1,4 @@
-export enum EnumNumero {
+enum EnumNumero {
     ZERO = "0",
     UM = "1",
     DOIS = "2",
@@ -10,3 +10,5 @@ export enum EnumNumero {
     OITO = "8",
     NOVE = "9",
 }
+
+export default EnumNumero;
