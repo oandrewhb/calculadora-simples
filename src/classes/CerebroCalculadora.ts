@@ -34,6 +34,7 @@ export class CerebroCalculadora {
     private gerarResultado(): void {
         try {
             const expressao = this.obterExpressaoBaixoNivel();
+            // eslint-disable-next-line
             const resultado = eval(expressao).toString();
             if (resultado === expressao) {
                 this.resultado = "";
