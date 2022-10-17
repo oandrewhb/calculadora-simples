@@ -1,5 +1,5 @@
 import { valorExisteEmEnum } from '../classes/Util';
-import EnumOperacao from '../enums/EnumOperacao';
+import { EnumOperacao } from '../enums/EnumOperacao';
 
 export class CerebroCalculadora {
     private expressao: string;
