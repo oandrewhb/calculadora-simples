@@ -1,6 +1,6 @@
 {
-  "short_name": "TCalculadora",
-  "name": "TCalculadora simples",
+  "short_name": "Calculadora",
+  "name": "Calculadora simples",
   "icons": [
     {
       "src": "imagens/icones/maskable_icon.png",
@@ -46,6 +46,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#ff0000",
+  "theme_color": "#000000",
   "background_color": "#ffffff"
 }

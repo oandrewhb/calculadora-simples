@@ -23,6 +23,7 @@ export class CerebroCalculadora {
         }
 
         expressaoBaixoNivel = expressaoBaixoNivel.replaceAll(EnumOperacao.MULTIPLICACAO, "*");
+        expressaoBaixoNivel = expressaoBaixoNivel.replaceAll(EnumOperacao.DIVISAO, "/");
 
         if (expressaoBaixoNivel === "") {
             expressaoBaixoNivel = "0";
