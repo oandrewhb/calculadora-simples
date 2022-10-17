@@ -10,6 +10,7 @@ import { EnumNumero } from "../../enums/EnumNumero";
 
 import Tela from '../Tela/Tela';
 import Teclado from '../Teclado/Teclado';
+import { EnumElemento } from '../../enums/EnumElemento';
 
 function Calculadora() {
 
@@ -55,32 +56,47 @@ function Calculadora() {
         comando: (comando: string) => {
             if (comando === EnumComando.LIMPAR) {
                 setExpressao("");
-                return;
-            }
-
-            if (comando === EnumComando.APAGAR) {
+            } else if (comando === EnumComando.APAGAR) {
                 setExpressao(deletarUltimoCaractere(expressao));
-                return;
-            }
-
-            if (comando === EnumComando.CALCULAR) {
+            } else if (comando === EnumComando.CALCULAR) {
                 setExpressao(resultado);
             }
         },
+        elemento: (elemento: string) => {
+            if (elemento === EnumElemento.SEPARADOR_DECIMAL) {
+
+                let temSeparadorDecimal = false;
+                let posicao = 1;
+                while (posicao <= expressao.length && temSeparadorDecimal === false) {
+                    const caractereAtual = expressao[expressao.length-posicao];
+                    if (caractereAtual === EnumElemento.SEPARADOR_DECIMAL) {
+                        temSeparadorDecimal = true;
+                    } else if (!valorExisteEmEnum(caractereAtual, EnumNumero)) {
+                        posicao = expressao.length;
+                    }
+                    posicao++;
+                }
+
+                if (!temSeparadorDecimal) setExpressao(expressao + EnumElemento.SEPARADOR_DECIMAL);
+
+            }
+        }
     }
 
     function comandoDoTeclado(comando: string) {
 
         if (valorExisteEmEnum(comando, EnumNumero)) {
             lidaComComando.numero(comando);
-        }
-
-        if (valorExisteEmEnum(comando, EnumOperacao)) {
+            return;
+        } else if (valorExisteEmEnum(comando, EnumOperacao)) {
             lidaComComando.operacao(comando);
-        }
-
-        if (valorExisteEmEnum(comando, EnumComando)) {
+            return;
+        } else if (valorExisteEmEnum(comando, EnumComando)) {
             lidaComComando.comando(comando);
+            return;
+        } else if (valorExisteEmEnum(comando, EnumElemento)) {
+            lidaComComando.elemento(comando);
+            return;
         }
 
     }

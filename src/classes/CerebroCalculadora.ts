@@ -1,4 +1,5 @@
 import { valorExisteEmEnum } from '../classes/Util';
+import { EnumElemento } from '../enums/EnumElemento';
 import { EnumOperacao } from '../enums/EnumOperacao';
 
 export class CerebroCalculadora {
@@ -24,6 +25,7 @@ export class CerebroCalculadora {
 
         expressaoBaixoNivel = expressaoBaixoNivel.replaceAll(EnumOperacao.MULTIPLICACAO, "*");
         expressaoBaixoNivel = expressaoBaixoNivel.replaceAll(EnumOperacao.DIVISAO, "/");
+        expressaoBaixoNivel = expressaoBaixoNivel.replaceAll(EnumElemento.SEPARADOR_DECIMAL, ".");
 
         if (expressaoBaixoNivel === "") {
             expressaoBaixoNivel = "0";

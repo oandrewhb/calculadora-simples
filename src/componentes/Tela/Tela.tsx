@@ -1,5 +1,9 @@
+import { EnumElemento } from '../../enums/EnumElemento';
 import './Tela.css';
 
+function altoNivel(param: string): string {
+    return param.replaceAll(".", EnumElemento.SEPARADOR_DECIMAL);
+}
 
 interface propsTela {expressao: string, resultado: string}
 function Tela({expressao, resultado}: propsTela) {
@@ -7,10 +11,10 @@ function Tela({expressao, resultado}: propsTela) {
         <div className='tela'>
             <div className='numeros'>
                 <div className="expressao">
-                    <p>{expressao}</p>
+                    <p>{altoNivel(expressao)}</p>
                 </div>
                 <div className="resultado">
-                    <p>{resultado}</p>
+                    <p>{altoNivel(resultado)}</p>
                 </div>
             </div>
         </div>

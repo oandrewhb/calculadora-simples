@@ -4,6 +4,7 @@ import './Teclado.css';
 import { EnumComando } from "../../enums/EnumComando";
 import { EnumOperacao } from "../../enums/EnumOperacao";
 import { EnumNumero } from "../../enums/EnumNumero";
+import { EnumElemento } from '../../enums/EnumElemento';
 
 interface propsTeclado {
     comandoDoTeclado: Function,
@@ -31,7 +32,7 @@ function Teclado({comandoDoTeclado}: propsTeclado) {
         <div className='teclado'>
             <div className='teclado-linha'>
                 <Tecla conteudo={EnumComando.LIMPAR} />
-                <Tecla conteudo="( )" disabled={true} />
+                <Tecla conteudo={EnumElemento.PARENTERES} disabled={true} />
                 <Tecla conteudo={EnumOperacao.PORCENTAGEM} disabled={true} />
                 <Tecla conteudo={EnumOperacao.DIVISAO} />
             </div>
@@ -55,7 +56,7 @@ function Teclado({comandoDoTeclado}: propsTeclado) {
             </div>
             <div className='teclado-linha'>
             <Tecla conteudo={EnumNumero.ZERO} />
-                <Tecla conteudo="," disabled={true} />
+                <Tecla conteudo={EnumElemento.SEPARADOR_DECIMAL} />
                 <Tecla conteudo={EnumComando.APAGAR} />
                 <Tecla conteudo={EnumComando.CALCULAR} />
             </div>
