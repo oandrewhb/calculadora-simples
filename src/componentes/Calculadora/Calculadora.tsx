@@ -4,9 +4,9 @@ import './Calculadora.css';
 import { valorExisteEmEnum, trocarValorEmIndice, deletarUltimoCaractere } from '../../classes/Util';
 import { CerebroCalculadora } from '../../classes/CerebroCalculadora';
 
-import { EnumComando } from "../../enums/tempComando";
-import { EnumOperacao } from "../../enums/tempOperacao";
-import { EnumNumero } from "../../enums/tempNumero";
+import { EnumComando } from "../../enums/EnumComando";
+import { EnumOperacao } from "../../enums/EnumOperacao";
+import { EnumNumero } from "../../enums/EnumNumero";
 
 import Tela from '../Tela/Tela';
 import Teclado from '../Teclado/Teclado';

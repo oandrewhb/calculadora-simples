@@ -1,9 +1,9 @@
 import React from 'react';
 import './Teclado.css';
 
-import { EnumComando } from "../../enums/tempComando";
-import { EnumOperacao } from "../../enums/tempOperacao";
-import { EnumNumero } from "../../enums/tempNumero";
+import { EnumComando } from "../../enums/EnumComando";
+import { EnumOperacao } from "../../enums/EnumOperacao";
+import { EnumNumero } from "../../enums/EnumNumero";
 
 interface propsTeclado {
     comandoDoTeclado: Function,
