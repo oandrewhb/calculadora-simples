@@ -12,12 +12,14 @@ interface propsTeclado {
 function Teclado({comandoDoTeclado}: propsTeclado) {
 
 
-    interface propsTecla {conteudo: string, disabled?: boolean}
-    function Tecla({conteudo, disabled}: propsTecla) {
+    interface propsTecla {conteudo: string, disabled?: boolean, vermelho?: boolean}
+    function Tecla({conteudo, disabled, vermelho}: propsTecla) {
+
+
         return (
             <div className='teclado-coluna'>
                 <button
-                    className='tecla' onClick={() => {
+                    className={vermelho? 'tecla vermelho' : 'tecla'} onClick={() => {
                         comandoDoTeclado(conteudo)
                     }}
                     disabled={disabled}
@@ -31,34 +33,34 @@ function Teclado({comandoDoTeclado}: propsTeclado) {
     return (
         <div className='teclado'>
             <div className='teclado-linha'>
-                <Tecla conteudo={EnumComando.LIMPAR} />
-                <Tecla conteudo={EnumElemento.PARENTERES} disabled={true} />
-                <Tecla conteudo={EnumOperacao.PORCENTAGEM} disabled={true} />
-                <Tecla conteudo={EnumOperacao.DIVISAO} />
+                <Tecla vermelho={true} conteudo={EnumComando.LIMPAR} />
+                <Tecla vermelho={true} conteudo={EnumElemento.PARENTERES} disabled={true} />
+                <Tecla vermelho={true} conteudo={EnumOperacao.PORCENTAGEM} disabled={true} />
+                <Tecla vermelho={true} conteudo={EnumOperacao.DIVISAO} />
             </div>
             <div className='teclado-linha'>
                 <Tecla conteudo={EnumNumero.SETE} />
                 <Tecla conteudo={EnumNumero.OITO} />
                 <Tecla conteudo={EnumNumero.NOVE} />
-                <Tecla conteudo={EnumOperacao.MULTIPLICACAO} />
+                <Tecla vermelho={true} conteudo={EnumOperacao.MULTIPLICACAO} />
             </div>
             <div className='teclado-linha'>
             <Tecla conteudo={EnumNumero.QUATRO} />
                 <Tecla conteudo={EnumNumero.CINCO} />
                 <Tecla conteudo={EnumNumero.SEIS} />
-                <Tecla conteudo={EnumOperacao.SUBTRACAO} />
+                <Tecla vermelho={true} conteudo={EnumOperacao.SUBTRACAO} />
             </div>
             <div className='teclado-linha'>
             <Tecla conteudo={EnumNumero.UM} />
                 <Tecla conteudo={EnumNumero.DOIS} />
                 <Tecla conteudo={EnumNumero.TRES} />
-                <Tecla conteudo={EnumOperacao.ADICAO} />
+                <Tecla vermelho={true} conteudo={EnumOperacao.ADICAO} />
             </div>
             <div className='teclado-linha'>
             <Tecla conteudo={EnumNumero.ZERO} />
                 <Tecla conteudo={EnumElemento.SEPARADOR_DECIMAL} />
                 <Tecla conteudo={EnumComando.APAGAR} />
-                <Tecla conteudo={EnumComando.CALCULAR} />
+                <Tecla vermelho={true} conteudo={EnumComando.CALCULAR} />
             </div>
         </div>
     );
