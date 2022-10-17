@@ -1,16 +1,30 @@
 .tela {
-    background-color: #e0e0e0;
-    margin-bottom: 20px;
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.1);
     padding: 10px;
-    font-size: 30px;
+    margin-bottom: 50px;
+    height: 10vh;
+    align-items: center;
 }
 
-.expressao, .resultado {
+.tela .numeros {
+    width: 100%;
+    text-align: right;
+    height: max-content;
+    font-size: 35px;
+}
+
+.expressao {
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    height: 40px;
+}
+.resultado {
+    font-size: .7em;
+    color: rgb(0, 0, 0, 0.5);
+    height: 40px;
+}
+
+.tela p {
     margin: 0px;
-    line-height: 0px;
-}
-
-.expressao textarea, .resultado textarea {
-    padding: 10px;
-    font-size: 20px;
 }
