@@ -1,6 +1,6 @@
 .calculadora {
-    border: 1px solid black;
+    height: 100vh;
     padding: 10px;
-    height: 90vh;
-    max-width: 600px;
+    display: flex;
+    flex-direction: column;
 }

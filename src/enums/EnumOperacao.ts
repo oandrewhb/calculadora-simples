@@ -1,8 +1,8 @@
 export enum EnumOperacao {
     ADICAO = "+",
     SUBTRACAO = "-",
-    MULTIPLICACAO = "x",
-    DIVISAO = "/",
+    MULTIPLICACAO = "×",
+    DIVISAO = "÷",
     POTENCIASAO = "p",
     RADICIACAO = "r",
     PORCENTAGEM = "%",
