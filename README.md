@@ -7,29 +7,58 @@ Esse projeto é uma PWA, ou seja, uma aplicação web que pode ser instalada no 
 
 <hr>
 
+## Indice ##
+- [Como instalar ⬇️](https://github.com/andrewhermelino/calculadora-simples#como-instalar-%EF%B8%8F)
+    - [Pelo navegador no celular 📱](https://github.com/andrewhermelino/calculadora-simples#--pelo-navegador-no-celular-)
+    - [Pelo navegador no computador 🖥️](https://github.com/andrewhermelino/calculadora-simples#--pelo-navegador-no-computador-%EF%B8%8F)
+- [Tecnologias utilizadas no desenvolvimento ✔️](https://github.com/andrewhermelino/calculadora-simples#tecnologias-utilizadas-no-desenvolvimento-%EF%B8%8F)
+- [Metas 🎯](https://github.com/andrewhermelino/calculadora-simples#metas-)
+    - [Para o lançamento 🥳](https://github.com/andrewhermelino/calculadora-simples#--para-o-lan%C3%A7amento-)
+    - [Calculadoras 🔢](https://github.com/andrewhermelino/calculadora-simples#--calculadoras-)
+    - [Atualizações extras 🚧](https://github.com/andrewhermelino/calculadora-simples#atualiza%C3%A7%C3%B5es-extras-)
+
+<hr>
+
 ## Como instalar ⬇️ ##
 Além de utilizar essa calculadora apenas pelo navegador, é possível também instalar no seu dispositivo e adicionar um ícona na área de trabalho
 
 ### - Pelo navegador no celular 📱 ###
 - Acesse o site da calculadora: https://simples-calculadora.netlify.app/
+
 - Abra o menu do seu navegador 
+
     ![instalar_navegador_celular_1](imagensREADME/instalar_navegador_celular_1.png)
+    
 - Clique em `Instalar aplicativo` para instalar a calculadora
+
     ![instalar_navegador_celular_2](imagensREADME/instalar_navegador_celular_2.png)
+    
 - Clique em instalar
+
     ![instalar_navegador_celular_3](imagensREADME/instalar_navegador_celular_3.png)
+    
 - Aguarde enquanto o aplicativo é instalado
+
     ![instalar_navegador_celular_4](imagensREADME/instalar_navegador_celular_4.png)
+    
 - O ícone da calculadora aparecerá no seu celular
+
     ![instalar_navegador_celular_5](imagensREADME/instalar_navegador_celular_5.png)
+    
 
 ### - Pelo navegador no computador 🖥️ ###
 - Acesse o site da calculadora: https://simples-calculadora.netlify.app/
+
 - Clique no para instalar `Calculadora simples`
+
     ![instalar_navegador_pc_1](imagensREADME/instalar_navegador_pc_1.png)
+    
 - Clique em `INSTALAR` para instalar a calculadora
+
     ![instalar_navegador_pc_2](imagensREADME/instalar_navegador_pc_2.png)
+    
 - Agora a calculadora estará disponível no menu iniciar do seu computador
+
     ![instalar_navegador_pc_3](imagensREADME/instalar_navegador_pc_3.png)
 
 <hr>
