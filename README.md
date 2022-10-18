@@ -21,7 +21,7 @@ Esse projeto é uma PWA, ou seja, uma aplicação web que pode ser instalada no 
 <hr>
 
 ## Como instalar ⬇️ ##
-Além de utilizar essa calculadora apenas pelo navegador, é possível também instalar no seu dispositivo e adicionar um ícona na área de trabalho
+Além de utilizar essa calculadora apenas pelo navegador, é possível também instalar no seu dispositivo e adicionar um ícone na área de trabalho
 
 ### - Pelo navegador no celular 📱 ###
 - Acesse o site da calculadora: https://simples-calculadora.netlify.app/
