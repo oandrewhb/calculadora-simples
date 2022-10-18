@@ -1,6 +1,7 @@
 # Calculadora simples #
 
 `⚠️ Ainta em desenvolvimento ⚠️`
+
 O meu objetivo principal com essa calculadora, é substituir a calculadora padrão do Android e do Windows, entregando todas as funcionalidades dessas calcuadoras e mais um pouco.
 
 Esse projeto é uma PWA, ou seja, uma aplicação web que pode ser instalada no dispositivo e rodar sem conexão com internet.
@@ -28,23 +29,23 @@ Além de utilizar essa calculadora apenas pelo navegador, é possível também i
 
 - Abra o menu do seu navegador 
 
-    ![instalar_navegador_celular_1](imagensREADME/instalar_navegador_celular_1.png)
+    ![instalar_navegador_celular_1](fontes/imagensREADME/instalar_navegador_celular_1.png)
     
 - Clique em `Instalar aplicativo` para instalar a calculadora
 
-    ![instalar_navegador_celular_2](imagensREADME/instalar_navegador_celular_2.png)
+    ![instalar_navegador_celular_2](fontes/imagensREADME/instalar_navegador_celular_2.png)
     
 - Clique em instalar
 
-    ![instalar_navegador_celular_3](imagensREADME/instalar_navegador_celular_3.png)
+    ![instalar_navegador_celular_3](fontes/imagensREADME/instalar_navegador_celular_3.png)
     
 - Aguarde enquanto o aplicativo é instalado
 
-    ![instalar_navegador_celular_4](imagensREADME/instalar_navegador_celular_4.png)
+    ![instalar_navegador_celular_4](fontes/imagensREADME/instalar_navegador_celular_4.png)
     
 - O ícone da calculadora aparecerá no seu celular
 
-    ![instalar_navegador_celular_5](imagensREADME/instalar_navegador_celular_5.png)
+    ![instalar_navegador_celular_5](fontes/imagensREADME/instalar_navegador_celular_5.png)
     
 
 ### - Pelo navegador no computador 🖥️ ###
@@ -52,15 +53,15 @@ Além de utilizar essa calculadora apenas pelo navegador, é possível também i
 
 - Clique no para instalar `Calculadora simples`
 
-    ![instalar_navegador_pc_1](imagensREADME/instalar_navegador_pc_1.png)
+    ![instalar_navegador_pc_1](fontes/imagensREADME/instalar_navegador_pc_1.png)
     
 - Clique em `INSTALAR` para instalar a calculadora
 
-    ![instalar_navegador_pc_2](imagensREADME/instalar_navegador_pc_2.png)
+    ![instalar_navegador_pc_2](fontes/imagensREADME/instalar_navegador_pc_2.png)
     
 - Agora a calculadora estará disponível no menu iniciar do seu computador
 
-    ![instalar_navegador_pc_3](imagensREADME/instalar_navegador_pc_3.png)
+    ![instalar_navegador_pc_3](fontes/imagensREADME/instalar_navegador_pc_3.png)
 
 <hr>
 
