@@ -16,6 +16,7 @@ Esse projeto é uma PWA, ou seja, uma aplicação web que pode ser instalada no 
     - [Para o lançamento 🥳](https://github.com/andrewhermelino/calculadora-simples#--para-o-lan%C3%A7amento-)
     - [Calculadoras 🔢](https://github.com/andrewhermelino/calculadora-simples#--calculadoras-)
     - [Atualizações extras 🚧](https://github.com/andrewhermelino/calculadora-simples#atualiza%C3%A7%C3%B5es-extras-)
+- [Extensões 📦]()
 
 <hr>
 
@@ -132,3 +133,7 @@ Algumas implementações que seriam interessantes de adicionar na calculadora em
     - [ ] Sistema para escolher entre os temas disponíveis
     - [ ] Sistema para criar próprio tema
     - [ ] Escolher formato dos componentes (Ex: quadrado, 3D, circulado e tabela)
+
+### Extensões 📦 ###
+Ao longo do desenvolvimento foram adicionado algumas extensões ao projeto para facilitar o desenvolvimento, abaixo segue uma lista das dependências que possuem documentação
+- [react-icons](https://react-icons.github.io/react-icons) `^4.6.0`

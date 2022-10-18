@@ -1,6 +1,8 @@
 import React from 'react';
 import './Teclado.css';
 
+import { FiDelete } from 'react-icons/fi';
+
 import { EnumComando } from "../../enums/EnumComando";
 import { EnumOperacao } from "../../enums/EnumOperacao";
 import { EnumNumero } from "../../enums/EnumNumero";
@@ -24,7 +26,7 @@ function Teclado({comandoDoTeclado}: propsTeclado) {
                     }}
                     disabled={disabled}
                 >
-                    {conteudo === EnumComando.APAGAR ? "⭠" : conteudo}
+                    {conteudo === EnumComando.APAGAR ? <FiDelete /> : conteudo}
                 </button>
             </div>
         );
