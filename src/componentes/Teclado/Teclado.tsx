@@ -24,7 +24,7 @@ function Teclado({comandoDoTeclado}: propsTeclado) {
                     }}
                     disabled={disabled}
                 >
-                    {conteudo == EnumComando.APAGAR ? "⭠" : conteudo}
+                    {conteudo === EnumComando.APAGAR ? "⭠" : conteudo}
                 </button>
             </div>
         );
