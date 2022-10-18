@@ -16,12 +16,12 @@ Esse projeto é uma PWA, ou seja, uma aplicação web que pode ser instalada no 
     - [Para o lançamento 🥳](https://github.com/andrewhermelino/calculadora-simples#--para-o-lan%C3%A7amento-)
     - [Calculadoras 🔢](https://github.com/andrewhermelino/calculadora-simples#--calculadoras-)
     - [Atualizações extras 🚧](https://github.com/andrewhermelino/calculadora-simples#atualiza%C3%A7%C3%B5es-extras-)
-- [Extensões 📦]()
+- [Extensões 📦](https://github.com/andrewhermelino/calculadora-simples#extens%C3%B5es-)
 
 <hr>
 
 ## Como instalar ⬇️ ##
-Além de utilizar essa calculadora apenas pelo navegador, é possível também instalar no seu dispositivo e adicionar um ícona na área de trabalho
+Além de utilizar essa calculadora apenas pelo navegador, é possível também instalar no seu dispositivo e adicionar um ícone na área de trabalho
 
 ### - Pelo navegador no celular 📱 ###
 - Acesse o site da calculadora: https://simples-calculadora.netlify.app/
