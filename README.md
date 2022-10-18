@@ -12,24 +12,41 @@ Além de utilizar essa calculadora apenas pelo navegador, é possível também i
 
 ### - Pelo navegador no celular 📱 ###
 - Acesse o site da calculadora: https://simples-calculadora.netlify.app/
+
 - Abra o menu do seu navegador 
+
     ![instalar_navegador_celular_1](imagensREADME/instalar_navegador_celular_1.png)
+    
 - Clique em `Instalar aplicativo` para instalar a calculadora
+
     ![instalar_navegador_celular_2](imagensREADME/instalar_navegador_celular_2.png)
+    
 - Clique em instalar
+
     ![instalar_navegador_celular_3](imagensREADME/instalar_navegador_celular_3.png)
+    
 - Aguarde enquanto o aplicativo é instalado
+
     ![instalar_navegador_celular_4](imagensREADME/instalar_navegador_celular_4.png)
+    
 - O ícone da calculadora aparecerá no seu celular
+
     ![instalar_navegador_celular_5](imagensREADME/instalar_navegador_celular_5.png)
+    
 
 ### - Pelo navegador no computador 🖥️ ###
 - Acesse o site da calculadora: https://simples-calculadora.netlify.app/
+
 - Clique no para instalar `Calculadora simples`
+
     ![instalar_navegador_pc_1](imagensREADME/instalar_navegador_pc_1.png)
+    
 - Clique em `INSTALAR` para instalar a calculadora
+
     ![instalar_navegador_pc_2](imagensREADME/instalar_navegador_pc_2.png)
+    
 - Agora a calculadora estará disponível no menu iniciar do seu computador
+
     ![instalar_navegador_pc_3](imagensREADME/instalar_navegador_pc_3.png)
 
 <hr>
