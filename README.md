@@ -7,6 +7,18 @@ Esse projeto é uma PWA, ou seja, uma aplicação web que pode ser instalada no 
 
 <hr>
 
+## Indice ##
+- [Como instalar ⬇️](https://github.com/andrewhermelino/calculadora-simples/edit/master/README.md#como-instalar-%EF%B8%8F)
+    - [Pelo navegador no celular 📱](https://github.com/andrewhermelino/calculadora-simples/edit/master/README.md#--pelo-navegador-no-celular-)
+    - [Pelo navegador no computador 🖥️](https://github.com/andrewhermelino/calculadora-simples/edit/master/README.md#--pelo-navegador-no-computador-%EF%B8%8F)
+- [Tecnologias utilizadas no desenvolvimento ✔️](https://github.com/andrewhermelino/calculadora-simples/edit/master/README.md#tecnologias-utilizadas-no-desenvolvimento-%EF%B8%8F)
+- [Metas 🎯](https://github.com/andrewhermelino/calculadora-simples/edit/master/README.md#metas-)
+    - [Para o lançamento 🥳](https://github.com/andrewhermelino/calculadora-simples/edit/master/README.md#--para-o-lan%C3%A7amento-)
+    - [Calculadoras 🔢](https://github.com/andrewhermelino/calculadora-simples/edit/master/README.md#--calculadoras-)
+    - [Atualizações extras 🚧](https://github.com/andrewhermelino/calculadora-simples/edit/master/README.md#atualiza%C3%A7%C3%B5es-extras-)
+
+<hr>
+
 ## Como instalar ⬇️ ##
 Além de utilizar essa calculadora apenas pelo navegador, é possível também instalar no seu dispositivo e adicionar um ícona na área de trabalho
 
