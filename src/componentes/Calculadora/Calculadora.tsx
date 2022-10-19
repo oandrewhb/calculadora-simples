@@ -112,14 +112,9 @@ function Calculadora() {
     
 
     return (
-        <div>
-            <div className='calculadora'>
-                <Tela expressao={expressao} resultado={resultado} />
-                <Teclado comandoDoTeclado={comandoDoTeclado} />
-            </div>
-            <div className='versao'>
-                <p>v0.6.4</p>
-            </div>
+        <div className='calculadora'>
+            <Tela expressao={expressao} resultado={resultado} />
+            <Teclado comandoDoTeclado={comandoDoTeclado} />
         </div>
     )
 }
