@@ -1,57 +1,44 @@
 import { valorExisteEmEnum } from '../classes/Util';
-import { EnumElemento } from '../enums/EnumElemento';
-import { EnumOperacao } from '../enums/EnumOperacao';
+
+import { BaixoEnumOperacao } from '../enums/BaixoEnumOperacao';
+import { EnumStatusExpressao } from '../enums/EnumStatusExpressao';
 
 export class CerebroCalculadora {
     private expressao: string;
-    private resultado: string;
+    private resultado: string = "";
+    private statusExpressao: string;
 
     constructor(expressao: string = "") {
-        this.expressao = expressao;
-        this.resultado = "";
-    }
+        let expressaoFormatada = expressao;
+        let statusExpressao = EnumStatusExpressao.FINALIZADA;
 
-    private obterExpressaoBaixoNivel(): string {
-        let expressaoBaixoNivel = this.expressao;
-
-        const ultimoCaractereExpressao = expressaoBaixoNivel[expressaoBaixoNivel.length-1];
-        if (valorExisteEmEnum(ultimoCaractereExpressao, EnumOperacao)) {
-            if (ultimoCaractereExpressao === EnumOperacao.MULTIPLICACAO || ultimoCaractereExpressao === EnumOperacao.DIVISAO) {
-                expressaoBaixoNivel += "1";
-            } else if (ultimoCaractereExpressao === EnumOperacao.ADICAO || ultimoCaractereExpressao === EnumOperacao.SUBTRACAO) {
-                expressaoBaixoNivel += "0";
-            }
+        const ultimoCaractere = expressaoFormatada[expressaoFormatada.length-1];
+        if (valorExisteEmEnum(ultimoCaractere, BaixoEnumOperacao)) {
+            statusExpressao = EnumStatusExpressao.CONSTRUINDO;
         }
 
-        expressaoBaixoNivel = expressaoBaixoNivel.replaceAll(EnumOperacao.MULTIPLICACAO, "*");
-        expressaoBaixoNivel = expressaoBaixoNivel.replaceAll(EnumOperacao.DIVISAO, "/");
-        expressaoBaixoNivel = expressaoBaixoNivel.replaceAll(EnumElemento.SEPARADOR_DECIMAL, ".");
-
-        if (expressaoBaixoNivel === "") {
-            expressaoBaixoNivel = "0";
-        }
-
-        return expressaoBaixoNivel;
+        this.expressao = expressaoFormatada;
+        this.statusExpressao = statusExpressao;
     }
+
 
     private gerarResultado(): void {
-        try {
-            const expressao = this.obterExpressaoBaixoNivel();
-            // eslint-disable-next-line
-            const resultado = eval(expressao).toString();
-            if (resultado === expressao) {
-                this.resultado = "";
-            } else {
-                this.resultado = resultado;
-            }
-        } catch (e) {
-            const mostrarExceptions = false;
-            if (window.location.href.includes("localhost") && mostrarExceptions) {
-                console.log(
-                    " >-------------------{ Exception em CerebroCalculadora.ts }-------------------< \n",
-                    e,
-                    "\n >--------------------------------------------------------------------------<"
-                );
+        if (this.statusExpressao === EnumStatusExpressao.FINALIZADA) {
+            try {
+                // eslint-disable-next-line
+                const resultado = eval(this.expressao).toString();
+                if (resultado !== this.expressao) {
+                    this.resultado = resultado;
+                }
+            } catch (e) {
+                const mostrarExceptions = false;
+                if (window.location.href.includes("localhost") && mostrarExceptions) {
+                    console.log(
+                        " >-------------------{ Exception em CerebroCalculadora.ts }-------------------< \n",
+                        e,
+                        "\n >--------------------------------------------------------------------------<"
+                    );
+                }
             }
         }
     }

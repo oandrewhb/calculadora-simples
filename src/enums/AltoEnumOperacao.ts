@@ -1,4 +1,4 @@
-export enum EnumOperacao {
+export enum AltoEnumOperacao {
     ADICAO = "+",
     SUBTRACAO = "-",
     MULTIPLICACAO = "x",
@@ -6,5 +6,5 @@ export enum EnumOperacao {
     POTENCIASAO = "^",
     RADICIACAO = "√",
     PORCENTAGEM = "%",
-    FATORIALC = "!",
+    FATORIAL = "!",
 }

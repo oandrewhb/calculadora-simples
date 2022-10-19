@@ -1,5 +1,6 @@
-|  # | Descrição do commit                                                      |  Versão  | commit |
-|----|--------------------------------------------------------------------------|----------|--------|
+|  # | Descrição do commit                                                      |  Versão  |
+|----|--------------------------------------------------------------------------|----------|
+| 41 | Reorganizado sistema de enums                                            | 0.6.5    |
 | 40 | Mapeado versões anteriores e inicio do contador de versões 🚩            | 0.6.4    |
 | 39 | removido 'cursor: pointer' em 'Teclado.css'                              | 0.6.3    |
 | 38 | Update README.md                                                         | 0.6.2    |

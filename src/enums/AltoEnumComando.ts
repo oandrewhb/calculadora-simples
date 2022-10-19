@@ -1,4 +1,4 @@
-export enum EnumComando {
+export enum AltoEnumComando {
     CALCULAR = "=",
     LIMPAR = "AC",
     APAGAR = "del",
