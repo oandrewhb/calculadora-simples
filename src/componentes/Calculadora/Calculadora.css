@@ -1,5 +1,7 @@
 .calculadora {
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     flex-direction: column;
-    border: 1px solid red;
+    display: flex;
+    font-size: 45px;
 }

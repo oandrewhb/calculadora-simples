@@ -16,7 +16,6 @@ function Teclado({comandoDoTeclado}: propsTeclado) {
     interface propsTecla {conteudo: string, disabled?: boolean, vermelho?: boolean}
     function Tecla({conteudo, disabled}: propsTecla) {
 
-
         return (
             <div className='teclado-coluna'>
                 <button

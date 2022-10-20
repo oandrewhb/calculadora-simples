@@ -1,21 +1,37 @@
 /* TECLADO */
 .teclado {
-    background-color: greenyellow;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px;
+    flex: 85;
 }
 
 /* LINHA */
 .teclado .teclado-linha {
-    /* border: 1px solid blue; */
-
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /* COLUNA */
 .teclado .teclado-linha .teclado-coluna {
-    /* border: 1px solid red; */
-
+    width: 100%;
+    display: flex;
 }
 
 /* TECLA */
 .tecla {
-    
+    margin: 5px;
+    width: 100%;
+    font-size: 60%;
+}
+
+/* Estilos para quando a tela estiver na horizontal */
+@media (orientation: landscape) {
+    .teclado {
+        flex: 33;
+    }
 }

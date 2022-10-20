@@ -6,6 +6,14 @@ import { AltoEnumOperacao } from "../../enums/AltoEnumOperacao";
 import { BaixoEnumElemento } from "../../enums/BaixoEnumElemento";
 import { BaixoEnumOperacao } from "../../enums/BaixoEnumOperacao";
 
+function invisivel(condicao: boolean) {
+    if (condicao) {
+        return "invisivel";
+    } else {
+        return "";
+    }
+}
+
 function altoNivel(param: string): string {
     let resultado = param.replaceAll(BaixoEnumElemento.SEPARADOR_DECIMAL, AltoEnumElemento.SEPARADOR_DECIMAL);
 
@@ -18,7 +26,7 @@ function altoNivel(param: string): string {
     resultado = resultado.replaceAll(BaixoEnumOperacao.SUBTRACAO, AltoEnumOperacao.SUBTRACAO);
     resultado = resultado.replaceAll(BaixoEnumOperacao.ADICAO, AltoEnumOperacao.ADICAO);
 
-    return resultado;
+    return resultado === "" ? "_" : resultado;
 }
 
 interface propsTela {expressao: string, resultado: string}
@@ -26,11 +34,11 @@ function Tela({expressao, resultado}: propsTela) {
     return (
         <div className='tela'>
             <div className='numeros'>
-                <div className="expressao">
+                <div className={`expressao ${invisivel(expressao == "")}`}>
                     {/* <p>{altoNivel(expressao)}</p> */}
                     <p>524543278462375946327560423567423542678</p>
                 </div>
-                <div className="resultado">
+                <div className={`resultado ${invisivel(resultado == "")}`}>
                     {/* <p>{altoNivel(resultado)}</p> */}
                     <p>524543278462375946327560423567423542678</p>
                 </div>

@@ -33,8 +33,12 @@ function Versao() {
 function App() {
     return (
         <div className='App'>
-            <Calculadora />
-            <Versao />
+            <div className='conteudo-app'>
+                <Calculadora />
+            </div>
+            <div className='versao-app'>
+                <Versao />
+            </div>
         </div>
     );
 }
