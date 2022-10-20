@@ -1,9 +1,5 @@
 .calculadora {
     height: 100vh;
-    padding: 10px;
-    display: flex;
     flex-direction: column;
-    max-width: 400px;
-    margin-left: auto; 
-    margin-right: auto;
+    border: 1px solid red;
 }
