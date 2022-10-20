@@ -6,7 +6,6 @@ import { AltoEnumComando } from "../../enums/AltoEnumComando";
 import { AltoEnumOperacao } from "../../enums/AltoEnumOperacao";
 import { EnumNumero } from "../../enums/EnumNumero";
 import { AltoEnumElemento } from "../../enums/AltoEnumElemento";
-import { valorExisteEmEnum } from '../../classes/Util';
 
 interface propsTeclado {
     comandoDoTeclado: Function,
