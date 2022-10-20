@@ -27,6 +27,23 @@
     margin: 5px;
     width: 100%;
     font-size: 60%;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+}
+.tecla.padrao {
+    background-color: #FFFFFF;
+    border-color: #e6e6e6;
+}
+.tecla.secundario {
+    background-color: #04BFBF;
+    border-color: #0aa1a1;
+    color: #ffffff
+}
+.tecla.destaque {
+    background-color: #F2BA52;
+    border-color: #d6a343;
+    color: #ffffff
 }
 
 /* Estilos para quando a tela estiver na horizontal */

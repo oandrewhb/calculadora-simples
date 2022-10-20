@@ -6,6 +6,7 @@ import { AltoEnumComando } from "../../enums/AltoEnumComando";
 import { AltoEnumOperacao } from "../../enums/AltoEnumOperacao";
 import { EnumNumero } from "../../enums/EnumNumero";
 import { AltoEnumElemento } from "../../enums/AltoEnumElemento";
+import { valorExisteEmEnum } from '../../classes/Util';
 
 interface propsTeclado {
     comandoDoTeclado: Function,
@@ -16,10 +17,44 @@ function Teclado({comandoDoTeclado}: propsTeclado) {
     interface propsTecla {conteudo: string, disabled?: boolean, vermelho?: boolean}
     function Tecla({conteudo, disabled}: propsTecla) {
 
+        const obterClasseTecla = () => {
+            let classeTecla = "tecla "
+
+            const teclasPadrao: string[] = [
+                EnumNumero.SETE, EnumNumero.OITO, EnumNumero.NOVE,
+                EnumNumero.QUATRO, EnumNumero.CINCO, EnumNumero.SEIS,
+                EnumNumero.UM, EnumNumero.DOIS, EnumNumero.TRES,
+                EnumNumero.ZERO, AltoEnumElemento.SEPARADOR_DECIMAL, AltoEnumComando.APAGAR
+            ];
+
+            const teclasSecundario: string[] = [
+                AltoEnumElemento.PARENTERES,
+                AltoEnumOperacao.PORCENTAGEM,
+                AltoEnumOperacao.DIVISAO,
+                AltoEnumOperacao.MULTIPLICACAO,
+                AltoEnumOperacao.SUBTRACAO,
+                AltoEnumOperacao.ADICAO,
+            ];
+
+            const  teclasDestaque: string[] = [AltoEnumComando.LIMPAR, AltoEnumComando.CALCULAR]
+
+            if (teclasPadrao.includes(conteudo)) {
+                return classeTecla + 'padrao';
+            }
+
+            if (teclasSecundario.includes(conteudo)) {
+                return classeTecla + 'secundario';
+            }
+
+            if (teclasDestaque.includes(conteudo)) {
+                return classeTecla + 'destaque';
+            }
+        }
+
         return (
             <div className='teclado-coluna'>
                 <button
-                    className='tecla'
+                    className={`tecla ${obterClasseTecla()}`}
                     onClick={() => {
                         comandoDoTeclado(conteudo)
                     }}

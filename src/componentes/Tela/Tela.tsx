@@ -35,12 +35,10 @@ function Tela({expressao, resultado}: propsTela) {
         <div className='tela'>
             <div className='numeros'>
                 <div className={`expressao ${invisivel(expressao == "")}`}>
-                    {/* <p>{altoNivel(expressao)}</p> */}
-                    <p>524543278462375946327560423567423542678</p>
+                    <p>{altoNivel(expressao)}</p>
                 </div>
                 <div className={`resultado ${invisivel(resultado == "")}`}>
-                    {/* <p>{altoNivel(resultado)}</p> */}
-                    <p>524543278462375946327560423567423542678</p>
+                    <p>{altoNivel(resultado)}</p>
                 </div>
             </div>
         </div>
