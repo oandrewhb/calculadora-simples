@@ -1,5 +1,6 @@
 [
-    {"indice": 46, "tituloCommit": "Responsivo update: Resolvido problemas no deploy",                        "versao": "alpha-0.7.2a" },
+    {"indice": 47, "tituloCommit": "Responsivo update: Atualização nas fontes",                               "versao": "alpha-0.7.4"},
+    {"indice": 46, "tituloCommit": "Responsivo update: Resolvido problemas no deploy",                        "versao": "alpha-0.7.3"},
     {"indice": 45, "tituloCommit": "Responsivo update: Alterado cores do tema",                               "versao": "alpha-0.7.2" },
     {"indice": 44, "tituloCommit": "Responsivo update: Melhorado responsividade do teclado",                  "versao": "alpha-0.7.1" },
     {"indice": 43, "tituloCommit": "Responsivo update: WIP barra de rolagem no componente tela",              "versao": "alpha-0.7.0" },
