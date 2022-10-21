@@ -1,7 +1,7 @@
 export enum AltoEnumOperacao {
     ADICAO = "+",
     SUBTRACAO = "-",
-    MULTIPLICACAO = "x",
+    MULTIPLICACAO = "×",
     DIVISAO = "÷",
     POTENCIASAO = "^",
     RADICIACAO = "√",

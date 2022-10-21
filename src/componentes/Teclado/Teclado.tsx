@@ -50,6 +50,11 @@ function Teclado({comandoDoTeclado}: propsTeclado) {
             }
         }
 
+        const obterIcone = () => {
+            if (conteudo === AltoEnumComando.APAGAR) return <FiDelete />;
+            return conteudo;
+        }
+
         return (
             <div className='teclado-coluna'>
                 <button
@@ -59,7 +64,7 @@ function Teclado({comandoDoTeclado}: propsTeclado) {
                     }}
                     disabled={disabled}
                 >
-                    {conteudo === AltoEnumComando.APAGAR ? <FiDelete /> : conteudo}
+                    {obterIcone()}
                 </button>
             </div>
         );

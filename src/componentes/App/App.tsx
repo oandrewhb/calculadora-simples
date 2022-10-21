@@ -3,31 +3,16 @@ import './App.css';
 import { useQuery } from 'react-query';
 import Calculadora from '../Calculadora/Calculadora';
 
+import Versoes from '../../classes/Versoes';
+
 function Versao() {
-    const { data, status } = useQuery('versoes', () => fetch('./versoes.json').then(promessa => promessa.json()))
-
-    if (status === "loading") {
-        return (
-            <div className='versao'>
-                <p>...</p>
-            </div>
-        )
-    }
-
-    if (status === "error") {
-        return (
-            <div className='versao'>
-                <p>e</p>
-            </div>
-        )
-    }
-
+    const versoes = new Versoes();
+    const versaoAtual = versoes.obterVersaoAtual();
     return (
         <div className='versao'>
-            <p>{data[0].versao}</p>
+            <p>{versaoAtual.obterPrefixo()}-{versaoAtual.obterVersao()}</p>
         </div>
     );
-
 }
 
 function App() {
