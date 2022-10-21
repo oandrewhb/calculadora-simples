@@ -30,7 +30,19 @@
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
+    transition: .1s;
 }
+.tecla:disabled {
+    opacity: 0.2 !important;
+}
+.tecla:active {
+    transform: scale(0.95);
+    opacity: 0.7;
+}
+.tecla:hover{
+    opacity: 0.7;
+}
+
 .tecla.padrao {
     background-color: #FFFFFF;
     border-color: #e6e6e6;

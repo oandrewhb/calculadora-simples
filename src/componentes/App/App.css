@@ -22,3 +22,12 @@
 .versao p {
     color: rgb(0, 0, 0, 0.3);
 }
+
+@media (orientation: landscape) {
+    .versao-app {
+        display: none;
+    }
+    .conteudo-app {
+        height: 100%;
+    }
+}

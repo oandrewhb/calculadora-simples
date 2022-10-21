@@ -74,10 +74,10 @@
         padding: 0px 10px;
     }
 }
-@media only screen and (max-height: 280px) {
-    .tela .numeros {
+@media only screen and (max-height: 450px) {
+    /* .tela .numeros {
         font-size: 25px;
-    }
+    } */
     .expressao, .resultado {
         padding: 0px 10px;
     }

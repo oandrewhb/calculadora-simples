@@ -3,5 +3,16 @@
     width: 100%;
     flex-direction: column;
     display: flex;
-    font-size: 45px;
+    font-size: 70px;
+}
+
+@media only screen and (max-height: 520px) {
+    .calculadora {
+        font-size: 60px;
+    }
+}
+@media only screen and (max-height: 440px) {
+    .calculadora {
+        font-size: 50px;
+    }
 }
