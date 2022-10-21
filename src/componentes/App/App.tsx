@@ -5,10 +5,9 @@ import Versoes from '../../classes/Versoes';
 
 function Versao() {
     const versoes = new Versoes();
-    const versaoAtual = versoes.obterVersaoAtual();
     return (
         <div className='versao'>
-            <p>{versaoAtual.obterPrefixo()}-{versaoAtual.obterVersao()}</p>
+            <p>{versoes.obterDescricaoDeVersao()}</p>
         </div>
     );
 }

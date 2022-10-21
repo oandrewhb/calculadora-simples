@@ -22,6 +22,7 @@ class Versoes {
 
     constructor() {
         this.versoes = [
+            new V(50, "Pequena modificação na forma em que mostra a versão atual",                "alpha", "0.7.7" ),
             new V(49, "Removido react-query das dependências",                                    "alpha", "0.7.6" ),
             new V(48, "Responsivo update: Atulaizado sistema de versões",                         "alpha", "0.7.5" ),
             new V(47, "Responsivo update: Atualização nas fontes",                                "alpha", "0.7.4" ),
@@ -81,6 +82,11 @@ class Versoes {
 
     public obterVersaoAtual(): V {
         return this.versoes[0];
+    }
+
+    public obterDescricaoDeVersao() {
+        const versaoAtual = this.obterVersaoAtual();
+        return `${versaoAtual.obterPrefixo()}-${versaoAtual.obterVersao()}`;
     }
 
 }
