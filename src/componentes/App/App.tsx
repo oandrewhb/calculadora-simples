@@ -1,8 +1,6 @@
 import './App.css';
 
-import { useQuery } from 'react-query';
 import Calculadora from '../Calculadora/Calculadora';
-
 import Versoes from '../../classes/Versoes';
 
 function Versao() {

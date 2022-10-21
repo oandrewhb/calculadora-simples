@@ -22,6 +22,7 @@ class Versoes {
 
     constructor() {
         this.versoes = [
+            new V(49, "Removido react-query das dependências",                                    "alpha", "0.7.6" ),
             new V(48, "Responsivo update: Atulaizado sistema de versões",                         "alpha", "0.7.5" ),
             new V(47, "Responsivo update: Atualização nas fontes",                                "alpha", "0.7.4" ),
             new V(46, "Responsivo update: Resolvido problemas no deploy",                         "alpha", "0.7.3" ),

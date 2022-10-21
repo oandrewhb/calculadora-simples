@@ -138,4 +138,3 @@ Algumas implementações que seriam interessantes de adicionar na calculadora em
 ### Extensões 📦 ###
 Ao longo do desenvolvimento foram adicionado algumas extensões ao projeto para facilitar o desenvolvimento, abaixo segue uma lista das dependências que possuem documentação
 - [react-icons](https://react-icons.github.io/react-icons) `^4.6.0`
-- [react-query](https://react-query-v3.tanstack.com/) `^3.39.2`
