@@ -96,9 +96,9 @@ Implementações que eu julgo importantes para o aplicativo antes de considerar 
     - [ ] e
     - [ ] In
     - [ ] log
-- [ ] Memory
-- [ ] Tela `✏️ 0/1`
+- [ ] Tela `✏️ 0/2`
     - [ ] Adicionar separadores de milhar dinâmicamente
+    - [ ] Histórico
 - [ ] Design `✏️ 0/2`
     - [ ] Criar uma logo inicial para o lançamento
     - [ ] Criar um design inicial para o lançamento
