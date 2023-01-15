@@ -3,16 +3,6 @@
     src: url(../public/fontes/Roboto_Mono/RobotoMono-Regular.ttf);
 }
 
-
-:root {
-    /* Tema baseado no icone atual */
-    --um: #04BFBF;
-    --dois: #03A696;
-    --tres: #F2BA52;
-    --quatro: #F2AA52;
-    --cinco: #0D0D0D;
-}
-
 body {
     margin: 0;
     font-family: "RobotoMono", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
