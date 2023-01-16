@@ -87,7 +87,25 @@ function Calculadora() {
                 }
 
                 if (!temSeparadorDecimal) setExpressao(expressao + BaixoEnumElemento.SEPARADOR_DECIMAL);
+            } else if (elemento === AltoEnumElemento.PARENTERES) {
+                
+                let parenteses = 0
+                const ultimoCaractere = expressao[expressao.length-1]
 
+                for (const car of expressao.split('')) {
+                    if (car === BaixoEnumElemento.ABRE_PARENTERES) {
+                        parenteses++
+                    } else if (car === BaixoEnumElemento.FECHA_PARENTERES) {
+                        parenteses--
+                    }
+                }
+
+                if (parenteses === 0 || valorExisteEmEnum(ultimoCaractere, BaixoEnumOperacao) || ultimoCaractere === BaixoEnumElemento.ABRE_PARENTERES) {
+                    setExpressao(expressao + BaixoEnumElemento.ABRE_PARENTERES)
+                } else {
+                    setExpressao(expressao + BaixoEnumElemento.FECHA_PARENTERES)
+                }
+                
             }
         }
     }

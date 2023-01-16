@@ -33,8 +33,7 @@
 .tecla:disabled {
     opacity: 0.2 !important;
 }
-.tecla:hover,
-.tecla:focus{
+.tecla:hover {
   cursor: pointer;
   background-color: #EFEFEF;
 }
