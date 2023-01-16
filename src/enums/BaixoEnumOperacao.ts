@@ -5,6 +5,6 @@ export enum BaixoEnumOperacao {
     DIVISAO = "/",
     POTENCIASAO = "**",
     RADICIACAO = "raiz",
-    PORCENTAGEM = "/100",
+    PORCENTAGEM = "%",
     FATORIAL = "!",
 }

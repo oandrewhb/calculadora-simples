@@ -39,7 +39,7 @@ function Teclado({comandoDoTeclado}: propsTeclado) {
             <div className='teclado-linha'>
                 <Tecla conteudo={AltoEnumComando.LIMPAR} />
                 <Tecla conteudo={AltoEnumElemento.PARENTERES} />
-                <Tecla conteudo={AltoEnumOperacao.PORCENTAGEM} disabled={true} />
+                <Tecla conteudo={AltoEnumOperacao.PORCENTAGEM} />
                 <Tecla conteudo={AltoEnumOperacao.DIVISAO} />
             </div>
             <div className='teclado-linha'>

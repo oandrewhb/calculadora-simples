@@ -22,6 +22,7 @@ class Versoes {
 
     constructor() {
         this.versoes = [
+            new V(53, "Adicionado porcentagem (WIP)",                                             "alpha", "0.10.0" ),
             new V(52, "Adicionado botão de parenteses",                                           "alpha", "0.9.0" ),
             new V(51, "Design update",                                                            "alpha", "0.8.0" ),
             new V(50, "Pequena modificação na forma em que mostra a versão atual",                "alpha", "0.7.7" ),

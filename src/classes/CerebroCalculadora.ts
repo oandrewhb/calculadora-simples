@@ -44,6 +44,9 @@ export class CerebroCalculadora {
             parenteses--
         }
 
+        // Formata porcentagem
+        expressaoFormatada = expressaoFormatada.replaceAll(BaixoEnumOperacao.PORCENTAGEM, '/100*')
+
         this.expressao = expressaoFormatada;
         this.statusExpressao = statusExpressao;
     }
