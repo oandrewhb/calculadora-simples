@@ -6,8 +6,6 @@ O meu objetivo principal com essa calculadora, é substituir a calculadora padr�
 
 Esse projeto é uma PWA, ou seja, uma aplicação web que pode ser instalada no dispositivo e rodar sem conexão com internet.
 
-Notion desse projeto: https://likedandrew.notion.site/Calculadora-simples-91aab15642ec4572b5155255e1034129
-
 <hr>
 
 ## Tecnologias utilizadas no desenvolvimento ✔️ ##
