@@ -7,6 +7,7 @@ O meu objetivo principal com essa calculadora, é substituir a calculadora padr�
 Esse projeto é uma PWA, ou seja, uma aplicação web que pode ser instalada no dispositivo e rodar sem conexão com internet.
 
 Notion desse projeto: https://likedandrew.notion.site/Calculadora-simples-91aab15642ec4572b5155255e1034129
+
 <hr>
 
 ## Tecnologias utilizadas no desenvolvimento ✔️ ##
@@ -18,3 +19,28 @@ Notion desse projeto: https://likedandrew.notion.site/Calculadora-simples-91aab1
 
 ### Extensões 📦 ###
 - [react-icons](https://react-icons.github.io/react-icons) `^4.6.0`
+
+<hr>
+
+### TODO ✍ ###
+- [x] ~Teclado principal~
+    - [x] ~Operações básicas (adição, subtração, multiplicação e divisão)~
+    - [x] ~Comandos para APAGAR, LIMPAR e CALCULAR~
+    - [x] ~Possibilidade de números decimais~
+    - [x] ~Parênteses~
+    - [x] ~Porcentagem~
+- [ ] Teclado secundário
+    - [ ] Raiz quadrada
+    - [ ] PI
+    - [ ] Potência
+    - [ ] Fatorial
+    - [ ] DEG
+    - [ ] Sin
+    - [ ] cos
+    - [ ] tan
+    - [ ] INV
+    - [ ] e
+    - [ ] In
+    - [ ] log
+- [ ] Tela
+    - [ ] Adicionar separadores de milhar dinamicamente
